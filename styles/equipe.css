@@ -1,0 +1,119 @@
+:root {
+    --border-card-equipe-color: #e6ac00;
+}
+
+/*====  EQUIPE ============================ */
+
+#equipe-1 .container {
+    margin: 1rem;
+}
+
+#equipe-1 .image img:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 1)
+}
+
+#equipe-1 .image img {
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+#equipe-1 .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.section .socio-2 div h2 {
+    text-align: end;
+}
+
+#equipe-1 .title {
+    color: var(--title-color);
+}
+
+#equipe-1 .description {
+    color: var(--title-color);
+}
+
+
+/*====  COLABORADORES ============================ */
+.cards.grid {
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    border-bottom: 0.25rem solid var(--border-card-equipe-color);
+    border-radius: 0.25rem 0.25rem 0 0;
+    text-align: center;
+
+    transition: all 0.3s ease-in-out;
+    /* Transição suave */
+    cursor: pointer;
+    /* Indica interatividade */
+    transform-style: preserve-3d;
+    /* Mantém perspectiva 3D */
+}
+
+.card:hover {
+
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+}
+
+.card i {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+}
+
+.card i img {
+    border-radius: 0.5rem;
+}
+
+.card .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#equipe-2 header {
+    text-align: center;
+}
+
+#equipe-2 .title {
+    color: var(--title-color);
+}
+
+#equipe-2 .description {
+    color: var(--title-color);
+}
+
+
+/*========= MEDIA QUERIES =========*/
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+
+    /* equipe */
+    #equipe-1 .container {
+        margin: 0 auto;
+        grid-auto-flow: column;
+    }
+
+    /* colaboradores */
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px) {
+    :root {
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
+}

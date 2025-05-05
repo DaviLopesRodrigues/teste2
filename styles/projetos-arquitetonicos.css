@@ -1,0 +1,131 @@
+/*====  PROJETOS ARQUITETONICOS ============================ */
+
+:root {
+    --card-project-arq-color: #222B35;
+    --border-card-project-arq-color: #e6ac00;
+    --title-project-arq-color: #222B35;
+    --sub-title-project-arq-color: #E2D6C8;
+    --link-project-arq-color: #E2D6C8;
+    --card-hover-project-arq-color: #e6ac00;
+
+    --button-color: #222B35;
+    --icon-file-card-color: #e6ac00;
+    --icon-download-card-color: #E2D6C8;
+}
+
+body {
+    background-image: url("../assets/images/backgrounds/bg-projetos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#arquitetonicos header {
+    text-align: center;
+}
+
+.cards.grid {
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 1);
+    border-bottom: 0.25rem solid var(--border-card-project-arq-color);
+    border-radius: 0.25rem 0.25rem 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: var(--card-project-arq-color);
+
+    transition: all 0.3s ease-in-out;
+    /* Transição suave */
+    cursor: pointer;
+    /* Indica interatividade */
+    transform-style: preserve-3d;
+    /* Mantém perspectiva 3D */
+}
+
+.card:hover {
+    transform: scale(1.05) rotateX(3deg) rotateY(3deg);
+    /* Leve rotação e ampliação */
+    box-shadow: 0 12px 24px var(--card-hover-project-arq-color);
+    /* Sombra mais intensa */
+}
+
+
+.card i.icon-file-text2 {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--icon-file-card-color);
+}
+
+.card a i.icon-download {
+    font-size: 1.5rem;
+    color: var(--icon-download-card-color);
+    margin-right: 0.5rem;
+}
+
+.card .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#buttons-download-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#arquitetonicos .button {
+    color: var(--link-project-arq-color);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 0.25rem;
+    font: 500 1rem var(--body-font);
+    transition: background 0.3s;
+}
+
+
+#arquitetonicos .title {
+    color: var(--title-project-arq-color);
+}
+
+#arquitetonicos .sub-title {
+    color: var(--sub-title-project-arq-color);
+}
+
+/*Button*/
+
+/*========= MEDIA QUERIES =========*/
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+
+    /* memorial */
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px) {
+    :root {
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
+}

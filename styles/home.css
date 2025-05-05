@@ -1,0 +1,167 @@
+:root {
+    --border-button-color: #e6ac00;
+}
+
+/*====  HOME ============================ */
+#home-aqt {
+    overflow: hidden;
+}
+
+#home-aqt .container {
+    margin: 1rem;
+}
+
+
+#home-aqt .image {
+    position: relative;
+}
+
+#home-aqt .image img {
+    border-radius: 0.5rem;
+}
+
+#home-aqt .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+
+#home-aqt .title {
+    color: var(--title-color);
+}
+
+#home-aqt .sub-title {
+    color: var(--title-color);
+}
+
+#home-aqt .item-list {
+    color: var(--title-color);
+}
+
+
+#home-aqt #house-info {
+    border: 1px solid var(--border-button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.2s;
+}
+
+
+/*====  CONTACT ============================ */
+#contact-aqt .grid {
+    gap: 4rem;
+}
+
+#contact-aqt .text {
+    text-align: center;
+}
+
+#contact-aqt .text h2,
+p {
+    margin-bottom: 2rem;
+}
+
+#contact-aqt .button i,
+#contact-aqt ul li i {
+    font-size: 1.5rem;
+    margin-right: 0.625rem;
+}
+
+#contact-aqt ul.grid {
+    gap: 2rem;
+}
+
+#contact-aqt ul li {
+    display: flex;
+    align-items: center;
+}
+
+#contact-aqt ul li i {
+    color: var(--icons-contact-color);
+}
+
+#contact-aqt .title {
+    color: var(--title-color);
+}
+
+#contact-aqt .description {
+    color: var(--title-color);
+}
+
+#contact-aqt .item-list {
+    color: var(--title-color);
+}
+
+/*========= MEDIA QUERIES =========*/
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+
+    /* home */
+    #home-aqt .container {
+        grid-auto-flow: column;
+        justify-content: center;
+        margin: 4px auto;
+    }
+
+    #home-aqt .image {
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+    #home-aqt .text {
+        order: 0;
+        max-width: auto;
+        text-align: center;
+    }
+
+    #pavimentos {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #home-aqt .text #pav-terreo,
+    #home-aqt .text #pav-sup {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+    }
+
+    /* contact */
+    #contact-aqt .container {
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact-aqt .text {
+        max-width: 25rem;
+    }
+}
+
+/* large devices: 992 > */
+@media (min-width: 992px) {
+    :root {
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

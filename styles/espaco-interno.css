@@ -1,0 +1,62 @@
+ /*====  ESPAÇO INTERNO ============================ */
+ #interno .container {
+     margin-left: 0;
+     margin-right: 0;
+ }
+
+ #interno header {
+     margin-left: 1.5rem;
+     margin-right: 1.5rem;
+     margin-bottom: 0;
+     text-align: center;
+ }
+
+ #interno .title {
+     color: var(--title-color);
+ }
+
+ #interno img {
+     border-radius: 0.5rem;
+ }
+
+ /* swiper */
+ .swiper-slide {
+     height: auto;
+     padding: 4rem 1rem;
+ }
+
+ .swiper-pagination-bullet {
+     width: 0.75rem;
+     height: 0.75rem;
+ }
+
+ .swiper-pagination-bullet-active {
+     background: var(--swiper-pagination-bullet-color);
+ }
+
+ /*========= MEDIA QUERIES =========*/
+ /* extra large devices: 1200 > */
+ @media (min-width: 1200px) {
+
+     /* espaço interno */
+
+     #interno header {
+         max-width: 32rem;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     #interno .container {
+         margin-left: auto;
+         margin-right: auto;
+     }
+ }
+
+ /* large devices: 992 > */
+ @media (min-width: 992px) {
+     :root {
+         --title-font-size: 2.25rem;
+         --subtitle-font-size: 1.125rem;
+     }
+ }
