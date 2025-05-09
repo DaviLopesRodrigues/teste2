@@ -31,7 +31,7 @@ function changeHeaderWhenScroll() {
   }
 }
 
-/* Testimonials carousel slider swiper */
+/* Carousel slider swiper */
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   pagination: {
@@ -55,16 +55,6 @@ const scrollReveal = ScrollReveal({
   reset: true
 })
 
-// scrollReveal.reveal(
-//   `#home .image, #home .text,
-//   #about .image, #about .text,
-//   #services header, #services .card,
-//   #testimonials header, #testimonials .testimonials
-//   #contact .text, #contact .links,
-//   footer .brand, footer .social
-//   `,
-//   { interval: 100 }
-// )
 
 scrollReveal.reveal(
   `#home-aqt .image, #home-aqt .text,
@@ -84,17 +74,6 @@ scrollReveal.reveal(
   `,
   { interval: 100 }
 )
-
-/* Botão voltar para o topo */
-// const backToTopButton = document.querySelector('.back-to-top')
-
-// function backToTop() {
-//   if (window.scrollY >= 560) {
-//     backToTopButton.classList.add('show')
-//   } else {
-//     backToTopButton.classList.remove('show')
-//   }
-// }
 
 /* Menu ativo conforme a seção visível na página */
 const sections = document.querySelectorAll('main section[id]')
@@ -124,7 +103,6 @@ function activateMenuAtCurrentSection() {
 /* When Scroll */
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
-  // backToTop()
   activateMenuAtCurrentSection()
 })
 
@@ -137,7 +115,7 @@ houseInfos.addEventListener("click", () => {
     html: `
     <div style="display:flex; align-items: start; justify-content: center; gap: 1rem; color: #545454;">
 
-    <div style="text-align: start; ">
+    <div style="text-align: start; width: 11rem">
 
     <h3 style="text-align:start;">Térreo</h3>
       <ul>
@@ -154,7 +132,7 @@ houseInfos.addEventListener("click", () => {
 
       </div>
 
-      <div style="text-align: start;">
+      <div style="text-align: start; width: 11rem">
 
       <h3 style="text-align:start">Superior</h3>
       <ul>
